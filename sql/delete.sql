@@ -1,0 +1,3 @@
+SELECT * FROM t66
+DELETE FROM t66
+WHERE name_user = 200
