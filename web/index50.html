@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function run1(){
+            alert("run1");
+        }
+        function run2(){
+            alert("run2")
+        }
+        // window.onload=run1;
+
+        window.onload=function (){
+            var t1 = document.getElementById("t1");
+            t1.onclick=function (){
+                run1();
+                run2();
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="t1">
+</body>
+</html>

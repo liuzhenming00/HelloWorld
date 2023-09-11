@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function run1(){
+            alert("表单的提交按钮被提交了");
+            return false;
+        }
+        function run2(){
+            alert("键位弹起了");
+        }
+    </script>
+</head>
+<body>
+<form onsubmit="return run1()">
+    <input type="text" name="uname"><br>
+    <input type="submit" value="提交">
+    <input type="text" onkeyup="run2()">
+</form>
+
+</body>
+</html>
